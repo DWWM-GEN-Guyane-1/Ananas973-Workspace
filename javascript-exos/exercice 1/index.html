@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+
+    <!-- Méthode 1 -->
+      <script type="text/javascript" language="javascript">
+        function changeImage(images){
+        document.getElementById('image1').src=images;
+        }
+        </script>
+        
+        <img src="images/image1.jpg" id="image1" onmouseover="changeImage('images/image1_2.jpg')" onmouseout="changeImage ('images/image1.jpg')"/>
+        
+        <br>
+        
+  <!-- Méthode 2 -->
+<img src="images/image1.jpg" onmouseover="javascript:this.src='images/image1_2.jpg';" onmouseout="javascript:this.src='images/image1.jpg';" />
+
+<!-- Autre essai pour changer couleur de boutons -->
+  <p id="para">Some text here</p>
+  <button onclick="changeColor('blue');">blue</button>
+  <button onclick="changeColor('red');">red</button>
+
+  <script>
+  function changeColor(newColor) {
+  var elem = document.getElementById('para');
+  elem.style.color = newColor;
+  }
+  </script>
+
+      
+  </body>
+</html>

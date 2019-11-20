@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Table de multiplication du chiffre 7</title>
+
+<script language="javascript" type="text/javascript">
+function generateTable()
+{
+var myTab = 7; /* Je déclare la variable myTab d'une valeur de 7 */
+var myString = ""; /* Je déclare la variable myString qui désigne une chaîne de caractères */
+for (i=1; i<=10; i++) { /* Ici j'utilise la condition "Pour" déclarer que la variable i vaut 1 et ne dépasse pas 10 et je mets aussi i++ en incrément postfix */
+myString += i+ " x " +myTab+ " = " +(i*myTab)+ "<br/>"; /* Ici, je mets la formule, l'opération à effectuer */
+}
+document.write(myString); /* Ici, je dis d'écrire le résultat de l'opération dans le document */
+}
+</script>
+</head>
+<body>
+<button onclick="generateTable()">Obtenir la table de multiplication de 7</button>
+</body>
+</html>

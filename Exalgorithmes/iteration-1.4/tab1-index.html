@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>JavaScript - Fonction pour afficher la table de multiplication d'un nombre donné</title>
+	</head>
+
+	<body style="text-align: center;">
+		<h1>JavaScript - Fonction pour afficher la table de multiplication d'un nombre donné</h1>
+		<p><input type="text" id="txtNumber" placeholder="Enter number"/></p>
+		<p><input type="button" value="Afficher la table" onclick='printTable()'/>
+		<!--print numbers-->
+		<p id="pPrint"></p>
+
+		<script type="text/javascript">
+			function printTable(){ // Soit la fonction printTable déclarée
+				var num; // soit la variable num déclarée
+				num=Number(document.getElementById('txtNumber').value); // On dit ici 
+				for(var i=1; i<=10; i++){
+					var pTag= document.getElementById('pPrint');
+					pTag.innerHTML += (num*i) + "<br/>" 
+				}
+			}
+		</script>
+	</body>
+
+</html>

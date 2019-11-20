@@ -1,0 +1,33 @@
+#nav-content li a {
+    color: white;
+    padding: 1.5em;
+    margin-top: -2em;
+}
+
+.card-img1 {
+    opacity: 20em;
+}
+
+.orga {
+    color: white;
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -2em;
+}
+
+.nic {
+    color: blue;
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -2em;
+}
+
+.blockquote1 {
+    padding-top: 20em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-center {
+
+}
