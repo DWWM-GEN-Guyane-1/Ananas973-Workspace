@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Algorithmism</title>
+        </head>
+    <body>
+        <h3>Cours 1 - Exo05</h3>
+        <p>Une imprimerie facture :</p>
+        <ol>
+            <li>Les 10 premières photocopies à 0.20€/unité</li>
+            <li>les 20 suivantes à 0.18€/unité</li>
+            <li>au-delà à 0.15€/unité</li>
+        </ol>
+<p>Consigne :<br/>
+    Ecrire un algorithme qui demande à l'utilisateur le nombre souhaité de photocopies et qui affiche la facture correspondante.</p>
+
+<script>
+    var copiesClient = prompt("Combien de copies désirez-vous ?")
+    copiesClient = parseInt(copiesClient)
+    if (copiesClient<=10){
+        alert("Le montant en € de votre facture est de : " +eval(copiesClient*0.2))
+    }
+
+else {
+    if(copiesClient<=30){
+        copiesClient = copiesClient-10;
+        alert("Le montant en € de votre facture est de : " +eval(2+copiesClient*0.18))
+    }
+
+    else {
+       if(copiesClient>30){
+        copiesClient = copiesClient-30;
+        alert("Le montant en € de votre facture est de : " +eval(5.6+copiesClient*0.15))
+       } 
+       
+    }
+}
+</script>
+    
+    </body>
+    </html>

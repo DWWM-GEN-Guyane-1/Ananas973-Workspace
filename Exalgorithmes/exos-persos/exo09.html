@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Train Your Mind - Exo9</title>
+        </head>
+    <body>
+        <h3>TYM - Iteration - Exo09</h3>
+        <p>Ecrire un algorithme qui demande un nombre compris entre 15 et 30 jusqu'à ce que la réponse convvienne.<br>
+            En cas de réponse inférieur à 15, l'algorithme demande à l'utilisateur de saisir un nombre plus grand.<br>
+            En cas de réponse supérieur à 30, l'algorithme demande à l'utilisateur de saisir un nombre plus petit.</p>
+
+
+<script>
+   var number = prompt("Saisissez un nombre compris entre 15 & 30")
+   var erreurs = 0
+   number = parseInt(number)
+
+   while(number<15 || number>30){
+       erreurs++
+       
+       if(number<15){
+       number = prompt("Saisissez un nombre plus grand")
+   }
+
+   else {
+       if(number>30){
+           number = prompt("Saisissez un nombre plus petit")
+       }
+   }
+}
+
+alert("Vous avez bien entré une valeur entre 15 et 30; votre numéro est le :" +number)
+alert("Nombre d'erreurs : " +erreurs)
+
+
+
+</script>
+    
+    </body>
+    </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Train Your Mind - Ex014</title>
+        </head>
+    <body>
+        <h3>TYM - Iteration - Exo14</h3>
+        <p>Ecrire un algorithme qui demande successivement 10 nombres.<br>
+            Ensuite, il faut afficher quel était le plus petit parmi ces 10 nombres.<br>
+            jusqu'à ce que la réponse convienne!</p>
+
+<script>
+    var reponse;
+    var i = 1;
+    var numMin = 1000 //On déclare que le minimum est 1000, on prend un grand nombre en supposant que l'utilisateur entrera un plus petit
+    
+    for(i=1;i<11;i++){ // On met inférieur à 11 pour avoir 10 itérations, pas de numéro demandé avant
+        reponse = prompt("Saisissez un nombre svp")
+        reponse = parseInt(reponse)
+        
+        if(reponse<numMin){
+            numMin = reponse
+        }
+    }
+    alert(numMin); 
+</script>
+    
+    </body>
+    </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Train Your Mind - Ex015</title>
+        </head>
+    <body>
+        <h3>TYM - Iteration - Exo15</h3>
+        <p>Ecrire un algorithme qui permet de vérifier le mot de passe saisi au clavier<br>
+            L'utilisateur a droit à 3 chances pour que la machine lui affiche le succès de l'authentification.<br>
+            Sinon un message de compte bloqué sera affiché.<br>
+            Note: le mot de passe correct est <em>"Bonjour"</em>.</p>
+
+
+<script>
+   var password = "Bonjour" // Le mdp est demandé une première fois, il faut la compter
+   var saisieMDP = prompt("Saisissez votre mot de passe")
+   var i = 1
+
+   while(saisieMDP != password && i<3){ //Vu qu'on a demandé une fois, il lui reste 2 essais possibles
+       saisieMDP = prompt("Réessayez svp")
+       i++ 
+   }
+
+if(i===3){ // itération strictement égale à 3 alors l'utilisateur est done
+    alert("Compte bloqué")
+}
+  else {
+    alert("Correct")
+  } 
+  
+</script>
+    
+    </body>
+    </html>

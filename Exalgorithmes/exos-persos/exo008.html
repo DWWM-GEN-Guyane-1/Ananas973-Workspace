@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Train Your Mind - Exo8</title>
+        </head>
+    <body>
+        <h3>TYM - Exo08</h3>
+        <p>Un organisme de location de voitures propose à ses clients deux tarifs :
+            <ol>
+                <li>Tarif ESSENCE: 14€/jour & 0.80€/km</li>
+                <li>Tarif DIESEL: 15€/jour & 0.60€/km</li>
+            </ol>
+            Ecrire un algorithme js qui demande le nombre de jours et le kilométrage pour calculer respectivement les tarifs ESSENCE & DIESEL.<br>
+            Afficher le tarif le plus compétitif des deux.</p>
+
+
+<script>
+    var nbreJours = prompt("Combien de jours souhaitez-vous louer un véhicule ?");
+    var nbreKm = prompt("Veuillez indiquer le nombre de km que vous souhaitez parcourir svp");
+    nbreJours = parseInt(nbreJours);
+    nbreKm = parseInt(nbreKm);
+    var essence = (14*nbreJours)+(0.80*nbreKm);
+    var diesel = (15*nbreJours)+(0.60*nbreKm);
+
+
+    if(essence<diesel){
+        alert("Le tarif ESSENCE est le plus compétitif pour votre trajet. Son montant en € est de : " +essence)
+    }
+
+    else {  
+        alert("Le tarif DIESEL est le plus compétitif pour votre trajet. Son montant en € est de : " +diesel)
+    }
+    
+</script>
+    
+    </body>
+    </html>

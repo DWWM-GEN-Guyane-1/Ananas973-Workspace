@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Train Your Mind - Exo6</title>
+        </head>
+    <body>
+        <h3>TYM - Exo06</h3>
+        <p>Ecrire un algorithme qui demande à l'utilisateur une année et affiche si l'année est bissextile ou non.<br>
+            Pour info/rappel, une année est bissextile si elle est divisible par 4 ET non divisible par 100...<br>
+            ou divisible par 400.</p>
+
+<script>
+    var userYear = prompt("Entrez une année et verifiez si elle est bissextile");
+    userYear = parseInt(userYear);
+
+    if(userYear%4 == 0 && userYear%100 != 0 || userYear%400 == 0){ /* Utiliser le modulo permet de vérifier si le reste est un entier */
+    alert("L'année saisie est bissextile !");
+    }
+    
+    else {
+        alert("L'année saisie n'est pas bissextile");
+    }
+
+</script>
+    
+    </body>
+    </html>

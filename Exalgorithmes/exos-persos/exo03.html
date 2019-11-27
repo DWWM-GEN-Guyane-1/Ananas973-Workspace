@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Iteration - Exo2</title>
+        </head>
+    <body>
+        <h3>Cours 1 - Exo03</h3>
+        <p>Ecrire un algorithme qui demande à l'utilisateur deux nombres et un opérateur mathématique saisi.<br>
+            L'algorithme effectue l'opération demandée sur les deux nombre et affiche le résultat.</p>
+
+<script>
+    var numA = prompt("Entrez un premier nombre")
+    var numB = prompt("Entrez un 2nd nombre")
+    var operator = prompt("Entrez l'opérateur mathématique de votre choix")
+    numA = parseInt(numA)
+    numB = parseInt(numB)
+    
+    if(operator === "+"){
+        alert(numA+numB)
+    }
+
+    else {
+        if(operator === "-"){
+        alert(numA-numB)
+        }
+
+    else {
+        if(operator === "*"){
+        alert(numA*numB)
+        }
+
+    else {
+        if(operator === "/"){
+            alert(numA/numB)
+        }
+    else {
+        alert("Erreur")
+    }
+    }
+    }
+}
+
+</script>
+    
+    </body>
+    </html>

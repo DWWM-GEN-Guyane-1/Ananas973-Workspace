@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Train Your Mind - Exo7</title>
+        </head>
+    <body>
+        <h3>TYM - Exo07</h3>
+        <p>Ecrire un algorithme qui demande à l'utilisateur son genre et sa hauteur en cm.<br>
+            Ensuite, il faut calculer et afficher le PI (poids idéal) en utilisant la formule suivante: <br>
+            PI = (taille_cm - 100) - (taille_cm - 150)/f.<br>
+            Pour les femmes, f = 2.5 alors que pour les hommes, f = 4.</p>
+
+
+<script>
+    var userSex = prompt("Êtes-vous une femme ou un homme ?");
+    var userHeight = prompt("Renseignez maintenant votre hauteur en cm")
+    userHeight = parseInt(userHeight);
+
+    if(userSex === "femme" || userSex === "Femme"){
+      alert("Madame, votre poids idéal est de : " +((userHeight-100)-(userHeight-150)/2.5));
+    }
+    
+    else {
+        if(userSex === "homme" || userSex === "Homme"){
+            alert("Monsieur, votre poids idéal est de : " +((userHeight-100)-(userHeight-150)/4));
+        }
+        
+        else {
+            alert("Votre réponse comporte une erreur")
+        }
+    }
+</script>
+    
+    </body>
+    </html>
