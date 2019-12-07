@@ -8,13 +8,8 @@
     <body>
         <h3>Exo PHP Part3 n°1</h3>
         <p>Consigne :<br>
-            Créer une variable et l'initialiser à 0.<br>
-            Tant que cette variable n'atteint pas 10, il faut :<br>
-       <ul>
-           <li>L'afficher</li>
-           <li>L'incrémenter</li>
-       </ul>
-    </p>
+            Créer un tableau months.<br>
+            L'initialiser</p>
 
     <?php
             $number = 0;

@@ -21,9 +21,9 @@
     <?php
             $var1 = 0;
             $var2 = 77;
-            for($var1=0; $var1<20;$var1++){
-                echo $var1*$var2;
-                echo "<br>";
+            while($var1<20){
+                echo $var1*$var2."<br>";
+                $var1++;
             }
         ?>
     </body>

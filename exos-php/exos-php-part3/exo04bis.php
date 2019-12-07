@@ -6,7 +6,7 @@
     </head>
     
     <body>
-        <h3>Exo PHP Part3 n°4</h3>
+        <h3>Exo PHP Part3 n°4 bis</h3>
         <p>Consigne :<br>
             Créer une variable et l'initialiser à 1.<br>
             Tant que cette variable n'atteint pas 10, il faut  :<br>
@@ -18,13 +18,9 @@
 
     <?php
             $var = 1;
-            while(true){
+            while($var<10){
                 $var = $var+$var/2;
                 echo $var."<br>";
-
-                if($var>10){
-                break;
-                }
             } 
         ?>
     </body>
