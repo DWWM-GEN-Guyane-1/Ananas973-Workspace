@@ -6,14 +6,15 @@
     </head>
     
     <body>
-        <h3>Exo PHP Part5 - Les tableaux - n°06</h3>
+        <h3>Exo PHP Part5 - Les tableaux - n°06 bis</h3>
         <p>Consigne :<br>
         Avec le tableau de l'exercice 5, afficher la valeur de l'index 59.</p>
 
     <?php
-    $hautFrance = ['Ainse' => 02, 'Nord' => 59, 'Oise' => 60, 'Pas-de-Calais' =>62, 'Somme' =>80];
+     $hautFrance = [02 => 'Ainse' , 59 => 'Nord', 60 =>'Oise', 62 =>'Pas-de-Calais', 80 => 'Somme'];
     
-    echo $hautFrance['Nord'];  
+    echo $hautFrance[59];
+           
         ?>
 
     </body>

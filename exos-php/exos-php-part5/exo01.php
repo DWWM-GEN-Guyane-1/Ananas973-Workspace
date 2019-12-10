@@ -8,12 +8,12 @@
     <body>
         <h3>Exo PHP Part5 - Les tableaux - n°01</h3>
         <p>Consigne :<br>
-        Créer un tableau mmonth et l'initialiser avec les valeurs suivantes :<br>
+        Créer un tableau month et l'initialiser avec les valeurs suivantes :<br>
         Tous les mois de Janvier à Décembre.</p>
 
     <?php
     $month = array("Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Décembre");
-    echo $month[0].'<br>';
+    echo $month[0].'<br>'; // Cette méthode permet d'afficher le contenu en fonction de la position
     echo $month[1].'<br>';
     echo $month[2].'<br>';
     echo $month[3].'<br>';

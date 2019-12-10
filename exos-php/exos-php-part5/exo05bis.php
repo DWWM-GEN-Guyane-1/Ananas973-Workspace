@@ -6,15 +6,15 @@
     </head>
     
     <body>
-        <h3>Exo PHP Part5 - Les tableaux - n°05</h3>
+        <h3>Exo PHP Part5 - Les tableaux - n°05 bis</h3>
         <p>Consigne :<br>
         Créer un tableau associatif avec comme index le numéro des départements des Hauts de France et en valeur leur nom.</p>
 
     <?php
-    $hautFrance = ['Ainse' => 02, 'Nord' => 59, 'Oise' => 60, 'Pas-de-Calais' =>62, 'Somme' =>80];
+    $hautFrance = [02 => 'Ainse' , 59 => 'Nord', 60 =>'Oise', 62 =>'Pas-de-Calais', 80 => 'Somme'];
     
     foreach($hautFrance as $clef => $valeur){
-        echo '- Le département suivant (zone Haut de FRance) : ' .$clef. ' porte le numéro : ' .$valeur. '<br>';
+        echo '- Le n° : ' .$clef. ' correspond au département suivant (zone Haut de FRance) : ' .$valeur. '<br>';
     }
            
         ?>
