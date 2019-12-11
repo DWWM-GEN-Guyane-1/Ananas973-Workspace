@@ -15,18 +15,18 @@
         <?php
             //Déclarer la variable km et lui donner la valeur de 1, afficher le contenu
             $age = 777;
-            echo "Votre age est de $age ans"
+            echo "Votre age est de $age ans";
             
             if($age>=18){
-                echo "Vous êtes majeur et vacciné"
+                echo "Vous êtes majeur et vacciné";
             }
                         
             elseif($age <18){
-                echo "Vous êtes mineur"
+                echo "Vous êtes mineur";
             }
 
             else {
-                echo "Vous faites erreur"
+                echo "Vous faites erreur";
             }
         ?>
     </body>

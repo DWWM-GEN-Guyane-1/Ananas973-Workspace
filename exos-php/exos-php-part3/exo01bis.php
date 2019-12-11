@@ -20,7 +20,7 @@
             $var = 1;
 
             while(true){
-               $var = $var/;
+               $var = $var/2;
                echo "<br>";
 
                 if($var===11){
