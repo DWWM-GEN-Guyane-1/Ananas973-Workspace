@@ -1,0 +1,24 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+.container1 {
+   background-image: url(img/intro-bg.jpg) ;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover ;
+   color: white;
+   text-align: center;
+   height: 30em;
+}
+
+.intro-title{
+    padding-top: 12em;
+    color: white;
+}
+
+.white-line{
+    color: white;
+    height: 2em;
+    width: 500px;
+}
